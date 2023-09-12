@@ -45,18 +45,16 @@ shopping = {
     ]
 }
 
-#displaying the information in the cart user with item added
-for users in shopping:
-    for user in shopping['users']:
-        print(f"User: {user['user_id']} information:")
+# Displaying the information in the cart for each user
+for user in shopping['users']:
+    print(f"User: {user['user_id']} information:")
+    print()
+    print("\t ITEMS:")
+    print('-------------------')
+    for item in user['items']:
+        print(f"product: {item['product_id']}")
+        print(f"quantity: {item['quantity']}")
+        print(f"subtotal: {item['subtotal']}")
         print()
-        print("\t ITEMS:")
-        print('-------------------')
-        for items in shopping['users']:
-            for item in user['items']:
-                print(f"product: {item['product_id']}")
-                print(f"quantity: {item['quantity']}")
-                print(f"subtotal: {item['subtotal']}")
-                print()
-        print()
+    print()
         
