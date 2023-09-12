@@ -38,7 +38,7 @@ for product in Products_catalog:
     print(f"Product {product['id']} Information:")
     print(f"Name: {product['product_name']}")
     print(f"Description: {product['description']}")
-    print(f"Price: ${product['price']:.2f}")
+    print(f"Price: frw{product['price']:.2f}")
     print(f"Stock: {product['stock']} units")
     print("Images:")
     for image in product['images']:
